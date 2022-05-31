@@ -6,11 +6,10 @@
 <?php get_header();?>
     <section class="hero">
         <div class="wrapper">
-            <div class="hero__box">
-                <div class="hero__box__items">
+            <div class="hero__cart">
+                <div class="hero__cart__items hero__cart__items_color">
                     <h1><?php single_post_title(); ?></h1>
-                    <p><?php echo wpautop(the_field('home_main_screen'));?></p>
-                    <a class="hero__link" href="<?php echo get_page_link(160)?>">История бренда</a>
+                    <?php echo wpautop(the_field('home_main_screen'));?>
                 </div>
             </div>
         </div>
@@ -166,11 +165,11 @@
         <div class="rating__bg">
             <div class="wrapper">
                 <h2 class="section-head section-head_news">Новости компании</h2>
-                <?php 
+                <?php 	
                     $args = array(
                         'post_type' => 'post',
-                        'post_status' => 'publich',
-                        'posts_per_page' => 2
+                        'post_status' => 'publish',
+                        'posts_per_page' => 3
                     );
                     $wp_query = new WP_Query($args);
                     while($wp_query -> have_posts()) : $wp_query -> the_post();

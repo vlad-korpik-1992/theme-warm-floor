@@ -511,6 +511,7 @@ section{
     font-weight: 500;
     padding-bottom: 15px;
     color: #fff;
+    text-decoration: underline;
 }
 .rating__items__data{
     font-size: 16px;
@@ -642,6 +643,9 @@ section{
     padding: 40px 20px 40px 20px;
     margin-right: 25px;
 }
+.hero__cart__items_color{
+    background-color: #ff7913;
+}
 .hero__cart__items h1{
     font-size: 34px;
     line-height: 100%;
@@ -673,12 +677,13 @@ section{
     font-size: 18px;
     line-height: 100%;
     color: #000;
+    padding-left: 10px;
 }
 .breadcrumbs__list__items{
     display: flex;
     align-items: center;
     padding-left: 10px;
-    padding-right: 35px;
+    padding-right: 25px;
 }
 .breadcrumbs__list__items:after {
     content: "•";
@@ -1647,6 +1652,12 @@ select.box__sidebar__input{
     }
     .similar__box__items__cover{
         height: auto;
+    }
+    .breadcrumbs__list__items{
+        padding-right: 10px;
+    }
+    .breadcrumbs__link{
+        padding-right: 20px;
     }
 }
 @media (max-width: 575px){
