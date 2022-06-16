@@ -16,7 +16,7 @@
     $mail->Username = 'v.korpik2015@gmail.com';
     $mail->Password = 'Aingeepoy3';
     $mail->Subject = $title;
-    $mail->setFrom('v.korpik2015@gmail.com', 'Radiator');
+    $mail->setFrom('Владислав Корпик', 'Radiator');
     $mail->msgHTML("
     <h2>Данные заказа</h2>
     <b>Имя:</b> $name<br>
